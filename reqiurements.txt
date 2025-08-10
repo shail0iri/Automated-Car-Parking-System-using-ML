@@ -1,0 +1,8 @@
+PyQt5==5.15.7
+mysql-connector-python==8.0.28
+opencv-python==4.5.5.64
+imutils==0.5.4
+pytesseract==0.3.9
+pandas==1.4.2
+requests==2.27.1
+python-dotenv==0.20.0
