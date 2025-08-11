@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenvs
+.env/
+venv/
+.envrc
+
+# Config and secrets
+backend/config.py
+config.py
+
+# Databases and data dumps
+*.db
+data.csv
+
+# Large datasets / images (keep sample images in a separate small folder if needed)
+datasets/Images/
+datasets/images/
+images/
+
+# PyInstaller / build
+dist/
+build/
+
+# Streamlit cache
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
