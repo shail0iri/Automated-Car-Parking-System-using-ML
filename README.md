@@ -31,8 +31,8 @@ Prerequisites
 
 Installation Steps
 - Clone the repository
-git clone https://github.com/shail0iri/Automated-Car-Parking-System-using-ML.git
-cd Automated-Car-Parking-System-using-ML
+  - git clone https://github.com/shail0iri/Automated-Car-Parking-System-using-ML.git
+- cd Automated-Car-Parking-System-using-ML
 
 - Install dependencies
 pip install -r requirements.txt
