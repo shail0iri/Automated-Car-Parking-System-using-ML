@@ -1,5 +1,102 @@
-# Automated-Car-Parking-System-using-ML
-In recent years, the population of the world has increased, the complexity of transportation has dramatically increased. Consequently, there is mountain traffic increase in vehicle movement, the work of mountain movement of various institutions. Vehicle parking is an important issue, and the need is increasing day by day. In India, we are still using a manual vehicle parking system and that is why we are struggling with the waste of time and fuel problem, when we need to park our car, we need to park our car, which requires a good amount of lighting. Another issue is the chaos that occurs when parking because there is no special system. Anyone can park anywhere that sometimes causes damage to vehicles while going out or in the parking lot. Security is also an issue. To solve these problems, we are introducing a new car parking system.an approach to help drivers under smart parking finding the right parking space efficiently and book it.
-This paper proposes an automated parking system utilizing machine learning (ML) techniques to optimize parking space utilization and enhance user experience. Traditional parking systems often suffer from inefficiencies, such as congestion, difficulty finding parking spots, and inefficient space allocation. In contrast, our proposed system leverages real-time data collection from sensors placed at entry and exit points, as well as within parking spots, to continuously monitor parking availability and vehicle movements. 
-Machine learning algorithms are employed to analyze this data, predict parking demand, and allocate parking spaces effectively. Through a feedback loop, the system continuously learns from user behaviors and adjusts its algorithms to adapt to changing conditions. Navigation guidance is provided to drivers, directing them to the most suitable parking spot based on factors such as proximity to their destination and parking spot size. 
-Furthermore, security and safety measures are integrated into the system, ensuring the protection of vehicles and pedestrians within the parking facility. Overall, our proposed automated parking system aims to optimize space utilization, reduce congestion, and enhance user satisfaction through.
+🚗 Automated Car Parking System using Machine Learning
+An intelligent computer vision-based system that automatically detects parking space occupancy in real-time using machine learning and image processing techniques.
+
+📋 Project Overview
+This system processes video footage from parking lots to identify available and occupied parking spaces. It uses a combination of traditional computer vision and machine learning approaches to provide real-time parking space monitoring without requiring expensive sensor infrastructure.
+
+🛠️ Technical Implementation
+Approaches Used
+1. Background Subtraction Method
+   - Uses MOG2 background subtractor for motion detection
+   - Processes video frames to detect changes in parking spaces
+   - Calculates occupancy based on pixel differences
+
+2. Color-based Detection
+- Utilizes color thresholding in HSV color space
+- Detects vehicles based on color characteristics
+- Provides an alternative detection methodology
+
+Key Features
+- Real-time Processing: Processes video streams in real-time
+- Multiple Detection Methods: Implements both background subtraction and color-based detection
+- Visual Feedback: Displays parking status with color-coded bounding boxes
+- Occupancy Statistics: Tracks and displays available/total parking spaces
+- Configurable Parameters: Adjustable thresholds for different lighting conditions
+
+🚀 Installation & Setup
+Prerequisites
+- Python 3.7+
+- OpenCV
+- NumPy
+
+Installation Steps
+- Clone the repository
+git clone https://github.com/shail0iri/Automated-Car-Parking-System-using-ML.git
+cd Automated-Car-Parking-System-using-ML
+
+- Install dependencies
+pip install -r requirements.txt
+
+- Run the application
+python main.py
+
+
+💻 Usage
+Running the System
+1. Ensure you have a video file named parking.mp4 in the project directory
+2. Execute the main script:
+    python main.py
+
+
+The system will:
+- Open the video stream
+- Process frames in real-time
+- Display parking space status with color-coded indicators
+- Show occupancy statistics in the console
+
+Controls
+- Press q to quit the application
+- Press p to pause/resume video playback
+
+🔧 Configuration:
+
+The system includes several configurable parameters:
+- Detection Threshold: Sensitivity for space occupancy detection
+- ROI Coordinates: Parking space boundaries (currently hardcoded)
+- Processing Resolution: Frame size optimization
+- Color Ranges: HSV values for vehicle detection
+
+📊 Output
+- Visual Display: Real-time video with overlaid parking status
+
+  🟢 Green: Available space
+  🔴 Red: Occupied space
+
+- Console Output: Continuous updates of available/total spaces
+- Statistics: Occupancy percentage and space utilization
+
+🎯 Key Algorithms & Techniques
+1. Computer Vision
+- Frame differencing and background subtraction
+- Color space transformation (BGR to HSV)
+- Contour detection and analysis
+- Region of Interest (ROI) processing
+
+2. Machine Learning
+- MOG2 (Mixture of Gaussians) background subtractor
+- Adaptive thresholding for various lighting conditions
+- Noise reduction and morphological operations
+
+🤝 Contributing
+- Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
+
+📝 License
+- This project is open source and available under the MIT License.
+
+🙏 Acknowledgments
+- OpenCV community for comprehensive computer vision libraries
+
+Contributors to the Python ecosystem
+
+- Sample data providers for testing and development
+This project is designed for educational and research purposes. For production deployment, additional considerations for lighting conditions, camera angles, and environmental factors would be necessary.
